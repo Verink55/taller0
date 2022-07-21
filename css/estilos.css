@@ -60,7 +60,7 @@ nav{
 
 /*/**/
 #features{
-    background: url(img/);
+    background: url(../img/bg-features.png);
     color: white;
     padding-top: 1rem;
 }
@@ -86,7 +86,6 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
 }
  
 .feature i{
@@ -96,8 +95,35 @@ nav{
 
 .feature-blue{
     background-color: #00325eae;
+    border-radius: 5px;
+
 }
  
 .feature-black{
     background-color: rgba(0,0,0,0.59);
+    border-radius: 5px;
+
+}
+#text{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    padding: 1rem;
+    margin: 2% 2% 4% 4%;
+}
+
+.div-text{
+    flex-basis: 65%;
+}
+
+.div-img{
+    flex-basis: 35%;
+    text-align: center;
+}
+
+.div-img img{
+    width:200px;
+    height: 200px;
 }
