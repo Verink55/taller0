@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="css/estilos.css">
     <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
     <title>Hotelia</title>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/mobius1/vanilla-Datatables@latest/vanilla-dataTables.min.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/mobius1/vanilla-Datatables@latest/vanilla-dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
 </head>
 
 <body>
@@ -33,8 +41,8 @@
                 <div id="conte-gris"></div>
                 <div id="conte-gris"></div>
                 <div id="conte-gris"></div>
-            </div>  
-        </div>      
+            </div>
+        </div>
     </section>
 
     </section>
@@ -80,13 +88,118 @@
         <h1>Ubícanos</h1>
         <br>
         <div id="service-descrip">
-            <img src="img/service-img.JPG">
-            <h2>AVENIDA CARRERA 8, #12A-42, BOGOTA DC, COLOMBIA</h2>
-            <hr size="1px" color="#337ab7"/>
-            <h2>+57 601 4567899</h2>
+            <div id="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4868.0141699094565!2d-74.07619032142793!3d4.600861884167651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a7147877c9%3A0x378b95e9cbda0740!2sCra.%208%20%2312a-42%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1659830174273!5m2!1ses!2sco"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h2>AVENIDA CARRERA 8, #12A-42, BOGOTA DC, COLOMBIA</h2>
+                <hr size="1px" color="#337ab7" />
+                <h2>+57 601 4567899</h2>
+            </div>
         </div>
     </section>
     <br>
+    <section id="nuestros">
+        <div id="subnuestos">
+            <h1>Nuestros usuarios dicen...</h1>
+            <div id="cajas-usu">
+                <div id="per">
+                    <div id="sub-es">
+                        <img src="img/per1.png">
+                        <div>
+                            <h3>Diego Rodriguez</h3>
+                            <span class='bi bi-star-fill'></span>
+                            <span class='bi bi-star-fill'></span>
+                            <span class='bi bi-star-fill'></span>
+                            <span class='bi bi-star-fill'></span>
+                            <span class='bi bi-star-fill' id="color"></span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="per-descrip">
+                        <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Elit quis enim ultricies
+                            ullamcorper. Nunc aenean aucor vel diam dictum.</p>
+                    </div>
+                </div>
+
+                <div id="per" class="wave">
+                    <div id="sub-es">
+                        <img src="img/per2.png">
+                        <div>
+                            <h3>Diana Garcia</h3>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="per-descrip">
+                        <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Elit quis enim ultricies
+                            ullamcorper. Nunc aenean aucor vel diam dictum.</p>
+                    </div>
+                </div>
+
+                <div id="per">
+                    <div id="sub-es">
+                        <img src="img/per3.png">
+                        <div>
+                            <h3>Diego Rodriguez</h3>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"
+                                id="color"></i>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="per-descrip">
+                        <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Elit quis enim ultricies
+                            ullamcorper. Nunc aenean aucor vel diam dictum.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="titulo-hr">
+                <div id="conte-gris"></div>
+                <div id="conte-gris"></div>
+                <div id="conte-gris"></div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section id="contac">
+        <div id="contac-caja">
+            <div id="contac-h1">
+                <p>Lorem ipsum dolor sit amet, consectet adipiscing elit. Elit quis enim ultrices ullamcorper. Nunc
+                    aenean auctor vel diam dictum.</p>
+            </div>
+        </div>
+        <hr color="#fff" size="1px">
+        <div id="contac-caja">
+            <div id="direc">
+                <span class='bi bi-geo-alt-fill'></span>
+                <p>Avenida carrera 8, #12A-42, Bogota DC, Colombia</p>
+                <br>
+                <span class='bi bi-telephone-fill'></span>
+                <p>+57 601 4567899</p>
+            </div>
+        </div>
+        <hr color="#fff" size="1px">
+        <div id="contac-caja">
+            <div id="polit">
+                <p>Políticas de privacidad</p>
+                <p>Políticas de privacidad</p>
+            </div>
+        </div>
+        <hr color="#fff" size="1px">
+        <div id="contac-caja">
+            <div id="redes">
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-facebook"></span>
+                <span class='bi bi-twitter'></span>
+            </div>
+        </div>
+        <br>
+    </section>
 </body>
 
 </html>
